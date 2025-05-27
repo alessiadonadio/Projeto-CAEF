@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projeto CAEF: Conscientização Ambiental – Espera Feliz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div id="copyright-alert" style="display:none; position:fixed; top:20px; right:20px; background:#222; color:#fff; padding:10px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.5); z-index:10000; max-width:200px; text-align:center;">
+        <img src="dog.png" alt="Direitos Autorais" style="width:60px; margin-bottom:8px;">
+        <div>Por favor, respeite os direitos autorais.</div>
+      </div>
+
+  <header>
+    <div class="header-content">
+      <img src="interventor.png" alt="Logo" title="Interventor">
+      <div>
+        <h1>Projeto CAEF: Conscientização Ambiental – Espera Feliz</h1>
+        <p><strong>O planeta Terra é a nossa casa, mas, afinal, por que não cuidamos dela?</strong></p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="pontos.html">Principais Pontos</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+
+  <main>
+    <section id="projeto">
+      <h2>O que podemos fazer diante disso?</h2>
+      <p>
+        O projeto CAEF, composto pelas alunas <strong>Any, Carla, Ester, Letícia, Luana, Maísa, Thayla e Yvella, do 9º ano 03 da Escola Estadual Interventor Júlio de Carvalho, </strong> tem como principal objetivo conscientizar as pessoas, alcançar a equidade ambiental, promover um meio ambiente mais sustentável, conhecer opiniões diversas sobre o assunto e fazer com que a justiça ambiental realmente valha a pena.
+      </p>
+
+      <h2>Projetos que iremos realizar</h2>
+      <ul>
+        <li>Gincanas</li>
+        <li>Panfletos</li>
+        <li>Blitz</li>
+        <li>Entrevistas com órgãos públicos</li>
+        <li>Mural de obras recicladas</li>
+      </ul>
+     
+  <h2>Confecção do projeto</h2>  
+
+<div class="imagem-lado-a-lado">
+  <img src="projeto1.jpg"  height="300" width="500" alt="Produção 1" title="Confecção do projeto">
+  <img src="projeto2.jpg"  height="300" width="300" alt="Produção 2" title="Confecção do projeto">
+</div>
+
+<div class="imagem-lado-a-lado">
+  <img src="projeto3.jpg"  height="400" width="500" alt="Produção 3" title="Confecção do projeto">>
+  <div class="video-container">
+    <video controls width="100%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+      <source src="VID-20250526-WA0090.mp4" type="video/mp4" height="300" width="500">
+    </video>
+  </div>
+</div>
+
+<hr>
+<p class="espaco-cima">
+  Nosso sincero agradecimento a quem leu até aqui e se interessou pelo assunto. Juntos, podemos salvar e cuidar do planeta. Devemos ser responsáveis por nossas ações e consequências.
+</p>
+<p>
+    <div class="artigo-info">
+        <p><em>Artigo feito por: <strong>Luana</strong></em></p>
+        <p><em>Ano: <strong>9º 03</strong></em></p>
+        <p><em>Escola Estadual Interventor Júlio de Carvalho</em></p>
+        <p><em>Grupo: <strong>CAEF</strong></em></p>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Projeto CAEF | Conscientização Ambiental</p>
+    <p><h5>Desenvolvido por Alessia M. Donadio :)</h5></p>
+  </footer>
+
+  <script>
+    document.addEventListener('copy', function(e) {
+      // Exibe a mensagem
+      const alertBox = document.getElementById('copyright-alert');
+      alertBox.style.display = 'block';
+  
+      // Esconde após 3 segundos
+      setTimeout(() => {
+        alertBox.style.display = 'none';
+      }, 3000);
+  
+      // Opcional: modificar o texto copiado para incluir aviso
+      const selection = window.getSelection().toString();
+      const aviso = "\n\n© 2025 Projeto CAEF - Todos os direitos reservados.";
+      e.clipboardData.setData('text/plain', selection + aviso);
+      e.preventDefault(); // para usar o conteúdo modificado
+    });
+  </script>
+</body>
+</html>
+
+
+

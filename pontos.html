@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto CAEF – Detalhes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="copyright-alert" style="display:none; position:fixed; top:20px; right:20px; background:#222; color:#fff; padding:10px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.5); z-index:10000; max-width:200px; text-align:center;">
+        <img src="dog.png" alt="Direitos Autorais" style="width:60px; margin-bottom:8px;">
+        <div>Por favor, respeite os direitos autorais.</div>
+      </div>
+
+
+  <header>
+    <div class="header-content">
+      <img src="interventor.png" alt="Logo" title="Interventor">
+      <div>
+        <h1>Projeto CAEF: Conscientização Ambiental – Espera Feliz</h1>
+        <p><strong>O planeta Terra é a nossa casa, mas, afinal, por que não cuidamos dela?</strong></p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="pontos.html">Principais Pontos</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+
+  <main>
+    <section>
+        <h2>Principais pontos afetados</h2>
+        <p>Os principais pontos afetados na cidade de <strong>Espera Feliz</strong> têm sido os <strong>bairros periféricos</strong>, onde vemos um claro exemplo de <strong>desigualdade ambiental</strong>.</p>
+        <p>Nos episódios que ocorreram em <strong>2020</strong> e <strong>2021</strong>, duas enchentes destruíram a cidade. Foi um cenário de <strong>desespero:</strong> casas foram perdidas, doenças se espalharam,comércios fecharam, pessoas perderam seus automóveis e o hospital ficou superlotado.</p>
+        <p>Após a inundação, o principal ponto restaurado foi o centro da cidade. Diversas pessoas se reuniram para limpar e “fazer tudo voltar ao normal”, enquanto os bairros mais afastados sofreram com as consequências por muito mais tempo.</p>
+        <p>Logo após a enchente de 2020, veio a <strong>pandemia da Covid-19</strong>. A população, já vulnerável, ficou ainda mais exposta ao vírus.</p>
+      </section>
+      
+          
+    <div class="imagem-lado-a-lado">
+        <img src="enchente1.jpg" height="500" width="500" alt="Enchente em Espera Feliz 1" height="300" title="Enchente de Espera Feliz em 2020">
+        <img src="enchente2.jpg" height="400" width="300" alt="Enchente em Espera Feliz 2" height="300" title="Enchentes de Espera Feliz em 2020">
+      </div>
+      
+    <section>
+      <h2>Consequências da enchente</h2>
+      <ul>
+        <li>Traumas na população</li>
+        <li>Perda de casas e comércios</li>
+        <li>Propagação de doenças</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Queimadas</h2>
+      <p>No ano de 2024, a cidade registrou muitas queimadas, sendo <strong>99,9% causadas por humanos</strong>.</p>
+      <p>O ar ficou poluído e os moradores relataram grande dificuldade para respirar. Animais perderam seus habitats e isso afetou a biodiversidade.</p>
+      <p><strong>É crime</strong>, segundo a Lei nº 9.605/98.</p>
+    </section>
+
+    <section>
+      <h2>Lixão a céu aberto</h2>
+      <p>Um problema gigantesco, muitas vezes ignorado.</p>
+      <p>Contamina o solo, atrai animais que transmitem doenças e é <strong>ilegal</strong>, conforme a Lei nº 12.305/2010.</p>
+    </section>
+
+    <section>
+      <h2>Conclusão</h2>
+      <p>Se cada um fizer a sua parte, é possível salvar a nossa cidade e o nosso planeta.</p>
+      <p>Precisamos nos conscientizar e espalhar essas informações.</p>
+      <p><em>A seguir, entrevista com funcionários da escola Estadual Interventor Júlio de Carvalho</em></p>
+    </section>
+     
+    <div class="video-container">
+    <video controls width="600">
+        <source src="VID-20250526-WA0086.mp4" type="video/mp4" title="Entrevista com funcionários da escola Interventor">
+      </video>
+    </div>
+
+</main>
+
+  <footer>
+    <p>&copy; 2025 - Projeto CAEF | Conscientização Ambiental</p>
+    <p><h5>Desenvolvido por Alessia M. Donadio :)</h5></p>
+  </footer>
+
+  <script>
+    document.addEventListener('copy', function(e) {
+      // Exibe a mensagem
+      const alertBox = document.getElementById('copyright-alert');
+      alertBox.style.display = 'block';
+  
+      // Esconde após 3 segundos
+      setTimeout(() => {
+        alertBox.style.display = 'none';
+      }, 3000);
+  
+      // Opcional: modificar o texto copiado para incluir aviso
+      const selection = window.getSelection().toString();
+      const aviso = "\n\n© 2025 Projeto CAEF - Todos os direitos reservados.";
+      e.clipboardData.setData('text/plain', selection + aviso);
+      e.preventDefault(); // para usar o conteúdo modificado
+    });
+  </script>
+</body>
+</html>

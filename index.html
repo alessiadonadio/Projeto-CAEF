@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto CAEF | Conscientização Ambiental</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="copyright-alert" style="display:none; position:fixed; top:20px; right:20px; background:#222; color:#fff; padding:10px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.5); z-index:10000; max-width:200px; text-align:center;">
+    <img src="dog.png" alt="Direitos Autorais" style="width:60px; margin-bottom:8px;">
+    <div>Por favor, respeite os direitos autorais.</div>
+  </div>
+  
+  <header>
+    <div class="header-content">
+      <img src="interventor.png" alt="Logo" title="Interventor">
+      <div>
+        <h1>Projeto CAEF: Conscientização Ambiental – Espera Feliz</h1>
+        <p><strong>O planeta Terra é a nossa casa, mas, afinal, por que não cuidamos dela?</strong></p>
+      </div>
+    </div>
+  </header>
+  
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="pontos.html">Principais Pontos</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+
+  <main>
+    <section id="início">
+      <h2>Você sabe o que é Justiça Ambiental?</h2>
+      <p>Ela trata do tema de que as questões ambientais não afetam a todos da mesma forma. Cada pessoa é atingida de maneira diferente e reage de forma distinta.</p>
+      <p>Por isso, batalhamos pela <strong>equidade ambiental</strong>.</p>
+    </section>
+
+    <section id="problemas">
+      <h2>Problemas Ambientais de Espera Feliz</h2>
+      <p>Espera Feliz tem apresentado diversos problemas que afetam a qualidade de vida da população e, principalmente, o planeta.</p>
+      <p>Os principais problemas têm sido:</p>
+      <ul>
+        <li><strong>Faixas de solo exposto:</strong> perda de nutrientes, aumento da erosão, redução da capacidade de retenção de água e diminuição da produtividade agrícola.</li>
+      </ul>
+      <p><em>Imagem da entrada de Espera Feliz a seguir:</em></p>
+      <div class="image-container">
+        <img src="entrada-espera feliz.jpeg" height="600" width="500" alt="Entrada de Espera Feliz" title="Entrada de Espera Feliz">
+      </div>
+
+      <ul>
+        <li><strong>Lixão a céu aberto:</strong> gera chorume, um líquido tóxico que contamina o solo e o lençol freático, comprometendo a qualidade da água.</li>
+      </ul>
+      <div class="image-container">
+        <img src="lixo.jpg" height="600" width="500" alt="Lixo" title="Lixo a céu aberto">
+      </div>
+
+      <ul>
+        <li><strong>Construções irregulares nos leitos dos rios:</strong>  proibidas pela Lei nº 14.285. Causam alteração do fluxo natural dos rios, poluição, destruição de habitats e representam risco extremo.</li>
+      </ul>
+      <div class="image-container">
+        <img src="construções.jpg" height="600" width="500" alt="Construções" title="Construções nos leitos do rios">
+      </div>
+
+      <ul>
+        <li><strong>Falta de arborização urbana:</strong>  aumento da temperatura, maior poluição do ar, problemas de drenagem e impacto na fauna e flora urbanas.</li>
+      </ul>
+      <div class="image-container">
+        <img src="arborização.jpg" height="600" width="500" alt="arborização" title="Arborização urbana">
+      </div>
+
+      <ul>
+        <li><strong>Impermeabilização do solo:</strong>  aumento das inundações, diminuição da biodiversidade, escassez de água e agravamento da poluição do ar.</li>
+      </ul>
+      <div class="image-container">
+        <img src="solo.jpg" height="600" width="500" alt="solo" title="Trabalhadores realizando a pavimentação asfáltica">
+      </div>
+
+      <ul>
+        <li><strong>Muitas queimadas:</strong>  poluição do ar e da água, perda de biodiversidade, mudanças climáticas, doenças respiratórias e danos à infraestrutura.</li>
+      </ul>
+      <p><em>Imagens da queimada do ano de 2024 em Espera Feliz</em></p>
+      <div class="queimadas-section">
+        <div class="imagem-linha">
+          <img src="queimada1.jpg" height="400" width="300" alt="Queimada 1" title="Queimadas em Espera Feliz">
+          <img src="queimada2.jpg" height="400" width="300" alt="Queimada 2" title="Queimadas em Espera Feliz">
+        </div>
+        <div class="imagem-centro">
+          <img src="queimada3.jpg" height="400" width="300" alt="Queimada 3" title="Queimadas em Espera Feliz">
+        </div>
+      </div>
+      </section>
+     </main>
+  <footer>
+    <p>&copy; 2025 - Projeto CAEF | Conscientização Ambiental</p>
+    <p><h5>Desenvolvido por Alessia M. Donadio :)</h5></p>
+  </footer>
+
+  <script>
+    document.addEventListener('copy', function(e) {
+      // Exibe a mensagem
+      const alertBox = document.getElementById('copyright-alert');
+      alertBox.style.display = 'block';
+  
+      // Esconde após 3 segundos
+      setTimeout(() => {
+        alertBox.style.display = 'none';
+      }, 3000);
+  
+      // Opcional: modificar o texto copiado para incluir aviso
+      const selection = window.getSelection().toString();
+      const aviso = "\n\n© 2025 Projeto CAEF - Todos os direitos reservados.";
+      e.clipboardData.setData('text/plain', selection + aviso);
+      e.preventDefault(); // para usar o conteúdo modificado
+    });
+  </script>
+  
+</body>
+</html>
